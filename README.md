@@ -17,7 +17,8 @@ Objetivo:
 
 Figuras/Exemplificação de requisitos de software:
 -Foto 1 - Página principal do software
-![image](https://user-images.githubusercontent.com/102002118/232863325-cba1b3b5-5322-4ff8-b180-da1b763521ec.png)
+
+-Foto 2 - Página de projetos do software
 
 
 
