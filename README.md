@@ -18,11 +18,26 @@ Objetivo:
 Figuras/Exemplificação de requisitos de software:
 -Foto 1 - Página principal do software
 
--Foto 2 - Página de projetos do software
+![image](https://user-images.githubusercontent.com/102002118/233219133-c676a0b5-8612-49dc-a300-754db43f799d.png)
+
+-Foto 2 - Página de Configurações do Projeto
+
+![image](https://user-images.githubusercontent.com/102002118/233219224-31e90011-b78a-416d-9115-1b48e5feaf81.png)
 
 
+-Foto 3 - Página de Chat 
 
-Integrantes:
+![image](https://user-images.githubusercontent.com/102002118/233219259-1a8ad43c-4e9a-4898-a2ba-1e74612ae54e.png)
+
+-Foto 4 - Página da aba de projetos da empresa ou da pessoa solucionadora
+
+![image](https://user-images.githubusercontent.com/102002118/233219424-c224fd6d-aed8-4e07-810c-f597253f6bf6.png)
+
+-Para mais informações da interface, acesse o link do desenvolvimento dos protótipos de tela:
+
+https://www.figma.com/file/JDo0Cs0TMia0fEUELaOXI8/ConnectingRoots?node-id=0-1&t=ij9NaYtvA2xkJ60d-0
+
+Integrantes do Projeto:
   -João Renan Santanna Lopes - joao23070204@aluno.cesupa.br
   -João Matheus Severino - joao22070206@aluno.cesupa.br;
   -Fábio Gabriel Barros Oliveira - fabio22070055@aluno.cesupa.br;
