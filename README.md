@@ -39,9 +39,14 @@ Figuras/Exemplificação de requisitos de software:
 https://www.figma.com/file/JDo0Cs0TMia0fEUELaOXI8/ConnectingRoots?node-id=0-1&t=ij9NaYtvA2xkJ60d-0
 
 Integrantes do Projeto:
-  -João Renan Santanna Lopes - joao23070204@aluno.cesupa.br
-  -João Matheus Severino - joao22070206@aluno.cesupa.br;
-  -Fábio Gabriel Barros Oliveira - fabio22070055@aluno.cesupa.br;
-  -Rodrigo Cardoso Franco - rodrigo22070211@aluno.cesupa.br ;
-  -Jefferson  FigueiredoDantas - jefferson21070020@aluno.cesupa.br;
+
+-João Renan Santanna Lopes - joao23070204@aluno.cesupa.br
+  
+-João Matheus Severino - joao22070206@aluno.cesupa.br;
+ 
+-Fábio Gabriel Barros Oliveira - fabio22070055@aluno.cesupa.br;
+ 
+ -Rodrigo Cardoso Franco - rodrigo22070211@aluno.cesupa.br ;
+  
+ -Jefferson  FigueiredoDantas - jefferson21070020@aluno.cesupa.br;
   
