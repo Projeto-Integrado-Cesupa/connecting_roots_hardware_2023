@@ -1,19 +1,31 @@
 # connecting_roots_hardware_2023
 
+Título: Connecting Roots
+
 Resumo:
+
   Uma plataforma de interação profissional, direcionada a negócios, permitindo auxiliar empresas terceirizadas como associações e comunidades a contratarem prestadores de serviços para solucionar problemas que essas comunidades enfrentam.
 
 Objetivo:
-  Concretizar um mundo onde pessoas possam trabalhar em projetos colaborativos e que as soluções tecnológicas ou não sejam de fácil acesso aos problemas presentes na humnanidade.
+
+  Concretizar um mundo onde pessoas possam trabalhar em projetos colaborativos e que as soluções tecnológicas ou não sejam de fácil acesso aos problemas presentes na humnanidade. O software irá cumprir com esse papel, ou seja, será o meio para concretizar o objetivo.
+ 
  
  Funcionalidade: 
- As funcionalidades principais são:
-  -Cadastro/login do usuário;
-  -Portifólio de projetos/soluções/problemas;
-  - Adição e edição configurações de conta de usuário (nome, cpf, endereço, profissão, currículo) e software;
-  -Integração com as principais redes sociais (uma aba deve ser feita para isso);
-  - de acompanhamento dos resultados do projeto
  
+ As funcionalidades principais são:
+ 
+ -Cadastro/login do usuário;
+ 
+ -Portifólio de projetos/soluções/problemas;
+ 
+ -Adição e edição configurações de conta de usuário (nome, cpf, endereço, profissão, currículo) e software;
+
+-Integração com as principais redes sociais (uma aba deve ser feita para isso);
+ 
+ -Aba de acompanhamento dos resultados do projeto - Impactos Sociais.
+ 
+
 
 Figuras/Exemplificação de requisitos de software:
 
