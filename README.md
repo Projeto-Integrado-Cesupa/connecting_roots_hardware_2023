@@ -8,7 +8,7 @@ Resumo:
 
 Objetivo:
 
-  Concretizar um mundo onde pessoas possam trabalhar em projetos colaborativos e que as soluções tecnológicas ou não sejam de fácil acesso aos problemas presentes na humnanidade. O software irá cumprir com esse papel, ou seja, será o meio para concretizar o objetivo.
+  Concretizar um mundo onde pessoas possam trabalhar em projetos colaborativos e que as soluções, tecnológicas ou não, sejam de fácil acesso aos problemas presentes na humnanidade. O software irá cumprir com esse papel, ou seja, será o meio para concretizar o objetivo.
  
  
  Funcionalidade: 
