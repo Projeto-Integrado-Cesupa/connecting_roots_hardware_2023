@@ -58,7 +58,7 @@ Integrantes do Projeto:
  
 -Fábio Gabriel Barros Oliveira - fabio22070055@aluno.cesupa.br;
  
- -Rodrigo Cardoso Franco - rodrigo22070211@aluno.cesupa.br ;
+-Rodrigo Cardoso Franco - rodrigo22070211@aluno.cesupa.br ;
   
- -Jefferson  FigueiredoDantas - jefferson21070020@aluno.cesupa.br;
+-Jefferson  FigueiredoDantas - jefferson21070020@aluno.cesupa.br;
   
