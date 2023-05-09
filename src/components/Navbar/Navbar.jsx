@@ -13,17 +13,14 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full h-[70px] leading-[70px] flex items-center shadow theme-dark">
-      <div className="container">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-[30px]">
+    <nav className="h-[70px] leading-[70px]  items-center shadow">
+      <div className="container ">
+        <div className="grid grid-cols-4 items-center">
+          <div className="flex items-center gap-[30px] col-span-1">
             {/*======== LOGO ======== */}
             <div className="flex items-center gap-[10px]">
               <div className="leading-[20px]">
-                <Link
-                  to=""
-                  className="text-xl text-headingColor font-[700]"
-                >
+                <Link to="" className="text-xl text-headingColor font-[700]">
                   ConnectingRoots
                 </Link>
               </div>
@@ -98,174 +95,40 @@ const Navbar = () => {
                 </Popover.Panel>
               </Transition>
             </Popover>
-            <Popover as="div" className="relative inline-block text-left">
-              <div>
-                <Popover.Button className="inline-flex text-sm sm:text-base bg-white  text-gray-600 hover:text-smallTextColor ring-gray-300">
-                  Financeiro
-                </Popover.Button>
-              </div>
-
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Popover.Panel className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  {({ close }) => (
-                    <div className="py-1">
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active
-                                ? "bg-gs text-primaryColor"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                           Movimentação da conta
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active ? "bg-gray-100" : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Adicionar fundos
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active ? "bg-gray-100" : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Opções de saque
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active ? "bg-gray-100" : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Dados de faturamento
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                    </div>
-                  )}
-                </Popover.Panel>
-              </Transition>
-            </Popover>
+            
 
             {/*======== MENU end ======== */}
           </div>
 
           {/*======== MENU center start ======== */}
 
-          <div class="flex">
+          <div class="flex col-span-2">
             <input
               type="search"
               class="relative w-full m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-l-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
               placeholder="Pesquisar"
             />
-            <Popover as="div" className="relative inline-block text-left">
-              <div>
-                <Popover.Button
-                  class="relative z-[2] flex items-center dark rounded-r bg-smallTextColor px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white  transition duration-150 ease-in-out "
-                  type="button"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    class="h-5 w-5"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </Popover.Button>
-              </div>
-
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
+            <button
+              class="relative z-[2] flex items-center dark rounded-r bg-smallTextColor px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white  transition duration-150 ease-in-out "
+              type="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-5 w-5"
               >
-                <Popover.Panel className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                {({ close }) => (
-                  <div className="py-1">
-                    <Popover.Panel>
-                      {({ active }) => (
-                        <Link
-                          to=""
-                          onClick={() => close()}
-                          className={classNames(
-                            active
-                              ? "bg-gs text-primaryColor"
-                              : "text-gray-700",
-                            "block px-4 py-2 text-sm"
-                          )}
-                        >
-                          Projetos
-                        </Link>
-                      )}
-                    </Popover.Panel>
-                    <Popover.Panel>
-                      {({ active }) => (
-                        <Link
-                          to="Profile"
-                          onClick={() => close()}
-                          className={classNames(
-                            active
-                              ? "bg-gray-100 text-smallTextColor"
-                              : "text-gray-700",
-                            "block px-4 py-2 text-sm"
-                          )}
-                        >
-                          Colaboradores
-                        </Link>
-                      )}
-                    </Popover.Panel>
-                  </div>
-                )}
-                </Popover.Panel>
-              </Transition>
-            </Popover>
+                <path
+                  fill-rule="evenodd"
+                  d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
           {/*======== MENU center end ======== */}
           {/*======== MENU right ======== */}
-          <div className="flex gap-2">
+          <div className="flex gap-2 col-span-1 justify-end">
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
@@ -415,51 +278,62 @@ const Navbar = () => {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Popover.Panel className="absolute right-0 z-10 mt-2 w-[22rem] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                {({ close }) => (
-                  <div className="py-1">
-                    <Popover.Panel>
-                      {({ active }) => (
-                        <div className="flex flex-col p-4 ">
-                          <span className=" text-headingColor font-bold leading-none pb-4">
-                            Luís Augusto
-                          </span>
-                          <hr className="bg-gray-900 h-px w-full " />
-                          <div className="flex justify-between">
-                            <div className="flex flex-col py-2">
-                              <Link
-                                onClick={() => close()}
-                                to="MyAccount"
-                                className="leading-none py-2"
-                              >
-                                Minha conta
-                              </Link>
-                              <Link 
+                  {({ close }) => (
+                    <div className="py-1">
+                      <Popover.Panel>
+                        {({ active }) => (
+                          <div className="flex flex-col p-4 ">
+                            <span className=" text-headingColor font-bold leading-none pb-4">
+                              Luís Augusto
+                            </span>
+                            <hr className="bg-gray-900 h-px w-full " />
+                            <div className="flex justify-between">
+                              <div className="flex flex-col py-2">
+                                <Link
+                                  onClick={() => close()}
+                                  to="MyAccount"
+                                  className="leading-none py-2"
+                                >
+                                  Minha conta
+                                </Link>
+                                <Link
+                                  onClick={() => close()}
+                                  to="Profile"
+                                  className="leading-none py-2"
+                                >
+                                  Plano de assinatura
+                                </Link>
+                              </div>
+                              <div className="flex flex-col pt-2">
+                                <Link
+                                  onClick={() => close()}
+                                  to="Profile"
+                                  className="leading-none p-2"
+                                >
+                                  Meu perfil
+                                </Link>
+                                <Link
+                                  onClick={() => close()}
+                                  to="Profile"
+                                  className="leading-none p-2"
+                                >
+                                  Central de ajuda
+                                </Link>
+                              </div>
+                            </div>
+                            <hr className="bg-gray-900 h-px w-full " />
+                            <Link
                               onClick={() => close()}
-                              to="Profile" className="leading-none py-2">
-                                Plano de assinatura
-                              </Link>
-                            </div>
-                            <div className="flex flex-col pt-2">
-                              <Link onClick={() => close()} to="Profile" className="leading-none p-2">
-                                Meu perfil
-                              </Link>
-                              <Link onClick={() => close()} to="Profile" className="leading-none p-2">
-                                Central de ajuda
-                              </Link>
-                            </div>
+                              to="/"
+                              className="leading-none pt-4 flex justify-center"
+                            >
+                              Sair
+                            </Link>
                           </div>
-                          <hr className="bg-gray-900 h-px w-full " />
-                          <Link onClick={() => close()}
-                            to="/"
-                            className="leading-none pt-4 flex justify-center"
-                          >
-                            Sair
-                          </Link>
-                        </div>
-                      )}
-                    </Popover.Panel>
-                  </div>
-                )}
+                        )}
+                      </Popover.Panel>
+                    </div>
+                  )}
                 </Popover.Panel>
               </Transition>
             </Popover>

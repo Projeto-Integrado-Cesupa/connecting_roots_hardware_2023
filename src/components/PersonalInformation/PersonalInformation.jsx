@@ -11,7 +11,7 @@ const PersonalInformation = () => {
             <input
               type="text"
               class="relative w-full m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.5rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
-              placeholder="Luís"
+              placeholder="Marcos"
             />
           </div>
           <div className="flex flex-col py-2 w-[23rem] ml-6">

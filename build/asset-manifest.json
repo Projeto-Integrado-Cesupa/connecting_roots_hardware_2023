@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c724be18.css",
+    "main.js": "/static/js/main.8e648aa4.js",
+    "static/media/imglogin.jpg": "/static/media/imglogin.cdd9117f324027f07b0e.jpg",
+    "static/media/person.jpg": "/static/media/person.34c492fd8526324fafac.jpg",
+    "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
+    "static/media/imgpersonbg.jpg": "/static/media/imgpersonbg.e52f95162a44c0a8b0e3.jpg",
+    "static/media/remixicon.eot?t=1590207869815": "/static/media/remixicon.5cb99e6cba5a4619063f.eot",
+    "static/media/remixicon.ttf?t=1590207869815": "/static/media/remixicon.f2616f597cf98f38d234.ttf",
+    "static/media/portfolio-06.jpg": "/static/media/portfolio-06.ea07d96454b4d7036952.jpg",
+    "static/media/portfolio-03.jpg": "/static/media/portfolio-03.78e7f47277db062e42ce.jpg",
+    "static/media/portfolio-05.jpg": "/static/media/portfolio-05.48fc29908a42185ebcac.jpg",
+    "static/media/imgabout.png": "/static/media/imgabout.873938678f0d233a42c7.png",
+    "static/media/portfolio-04.jpg": "/static/media/portfolio-04.b181b68b278c583999d7.jpg",
+    "static/media/portfolio-02.jpg": "/static/media/portfolio-02.18f98e2c71da9c1289b0.jpg",
+    "static/media/portfolio-01.jpg": "/static/media/portfolio-01.89a346463c90b2965a9e.jpg",
+    "static/media/portfolio-07.jpg": "/static/media/portfolio-07.7e51d9d8fbe739866e5c.jpg",
+    "static/media/remixicon.woff?t=1590207869815": "/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/remixicon.woff2?t=1590207869815": "/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/imgcontato.png": "/static/media/imgcontato.faa570c5543c2a22b62a.png",
+    "static/media/imgconexao.png": "/static/media/imgconexao.eacdf50f8ca5b4982cae.png",
+    "static/media/imgsustentabilidade.png": "/static/media/imgsustentabilidade.743867c4252ca1c2d171.png",
+    "static/media/imgdivulgacao.png": "/static/media/imgdivulgacao.3e0bde36ddebc0f5631e.png",
+    "static/media/imgconscientizacao.png": "/static/media/imgconscientizacao.d5c3ce44d80488554375.png",
+    "index.html": "/index.html",
+    "main.c724be18.css.map": "/static/css/main.c724be18.css.map",
+    "main.8e648aa4.js.map": "/static/js/main.8e648aa4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c724be18.css",
+    "static/js/main.8e648aa4.js"
+  ]
+}
