@@ -27,76 +27,13 @@ const Navbar = () => {
             </div>
             {/*======== LOGO end ======== */}
             {/*======== MENU start ======== */}
-            <Popover as="div" className="relative inline-block text-left">
-              <div>
-                <Popover.Button className="inline-flex text-sm sm:text-base bg-white  text-gray-600 hover:text-smallTextColor ring-gray-300">
-                  Projetos
-                </Popover.Button>
-              </div>
-
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Popover.Panel className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  {({ close }) => (
-                    <div className="py-1">
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active
-                                ? "bg-gs text-primaryColor"
-                                : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Publicar projeto
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active ? "bg-gray-100" : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Projetos publicados
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                      <Popover.Panel>
-                        {({ active }) => (
-                          <Link
-                            to="Profile"
-                            onClick={() => close()}
-                            className={classNames(
-                              active ? "bg-gray-100" : "text-gray-700",
-                              "block px-4 py-2 text-sm"
-                            )}
-                          >
-                            Projetos em desenvolvimento
-                          </Link>
-                        )}
-                      </Popover.Panel>
-                    </div>
-                  )}
-                </Popover.Panel>
-              </Transition>
-            </Popover>
-            
-
+            <div className="">
+              <Link 
+              to="PublishProject"
+              className="inline-flex text-sm leading-none sm:text-base bg-white  text-gray-600 hover:text-smallTextColor ring-gray-300">
+                Publicar
+              </Link>
+            </div>
             {/*======== MENU end ======== */}
           </div>
 
@@ -284,7 +221,7 @@ const Navbar = () => {
                         {({ active }) => (
                           <div className="flex flex-col p-4 ">
                             <span className=" text-headingColor font-bold leading-none pb-4">
-                              Luís Augusto
+                              Marcos Augusto
                             </span>
                             <hr className="bg-gray-900 h-px w-full " />
                             <div className="flex justify-between">
@@ -298,7 +235,7 @@ const Navbar = () => {
                                 </Link>
                                 <Link
                                   onClick={() => close()}
-                                  to="Profile"
+                                  to="#"
                                   className="leading-none py-2"
                                 >
                                   Plano de assinatura
@@ -307,14 +244,14 @@ const Navbar = () => {
                               <div className="flex flex-col pt-2">
                                 <Link
                                   onClick={() => close()}
-                                  to="Profile"
+                                  to="#"
                                   className="leading-none p-2"
                                 >
                                   Meu perfil
                                 </Link>
                                 <Link
                                   onClick={() => close()}
-                                  to="Profile"
+                                  to="#"
                                   className="leading-none p-2"
                                 >
                                   Central de ajuda

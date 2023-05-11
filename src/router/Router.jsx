@@ -8,6 +8,9 @@ import PersonalInformation from "../components/PersonalInformation/PersonalInfor
 import Password from "../components/Password/Password";
 import NotificationsAndAlerts from "../components/NotificationsAndAlerts/NotificationsAndAlerts";
 import BenefitPlans from "../components/BenefitPlans/BenefitPlans";
+import StepOne from "../components/PublishProject/StepOne";
+import StepTwo from "../components/PublishProject/SetpTwo";
+import PublishProject from "../components/PublishProject/PublishProject";
 
 
 export const router = createBrowserRouter([
@@ -30,6 +33,25 @@ export const router = createBrowserRouter([
         element: <Profile />,
         children:[],
       },
+      {
+        path: 'PublishProject',
+        element: <PublishProject />,
+        children:[
+          {
+            path: '',
+            element: <StepOne />,
+            children:[
+              
+            ],
+          },
+          {
+            path: 'StepTwo',
+            element: <StepTwo />,
+            children:[],
+          },
+        ],
+      },
+     
       {
         path: 'MyAccount',
         element: <MyAccount />,

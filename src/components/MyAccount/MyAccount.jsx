@@ -10,7 +10,7 @@ const Account = () => {
           <div className="flex flex-col bg-smallTextColor rounded-s-md h-96 w-80 items-center">
             <Link
               to=""
-              className="focus:bg-primaryColor text-xl z-[2] flex w-full hover:bg-primaryColor rounded-tl-md px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
+              className="focus:bg-secondColor text-xl z-[2] flex w-full hover:bg-secondColor rounded-tl-md px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const Account = () => {
             </Link>
             <Link
               to="Password"
-              class="focus:bg-primaryColor text-xl relative z-[2] flex w-full hover:bg-primaryColor px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
+              class="focus:bg-secondColor text-xl relative z-[2] flex w-full hover:bg-secondColor px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const Account = () => {
             </Link>
             <Link
               to="NotificationsAndAlerts"
-              class="focus:bg-primaryColor text-xl relative z-[2] flex w-full hover:bg-primaryColor px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
+              class="focus:bg-secondColor text-xl relative z-[2] flex w-full hover:bg-secondColor px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const Account = () => {
             </Link>
             <Link
               to="BenefitPlans"
-              class="focus:bg-primaryColor text-xl relative z-[2] flex w-full hover:bg-primaryColor px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
+              class="focus:bg-secondColor text-xl relative z-[2] flex w-full hover:bg-secondColor px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

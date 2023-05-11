@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import imgLogin from "../../assets/images/imglogin.jpg";
+
 const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   return (
