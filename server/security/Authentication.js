@@ -21,7 +21,7 @@ class Authentication {
 					throw new Error('Email e/ou senha inválidos');
 				}
 
-				if (await bcrypt.compare(password, user.senha)) {
+				if (await bcrypt.compare(password, user.password)) {
 					done(null, user);
 				} else {
 					throw new Error('Email e/ou senha inválidos');
@@ -35,7 +35,7 @@ class Authentication {
 			new LocalStrategy(
 				{
 					usernameField: 'email',
-					passwordField: 'senha',
+					passwordField: 'password',
 					session: false,
 				},
 				authenticateUser
