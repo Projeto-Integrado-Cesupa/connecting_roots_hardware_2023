@@ -11,6 +11,7 @@ const router = Router();
 
 router
 	.post('/sign-up', UserControllers.createUser)
-	.post('/login', Middlewares.local, UserControllers.login)	
+	.post('/login', Middlewares.local, UserControllers.login)
+	.put('/user/update', Middlewares.bearer, UserControllers.updateUser)	
 
 module.exports = router;

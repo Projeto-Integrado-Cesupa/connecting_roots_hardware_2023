@@ -1,4 +1,5 @@
 const UserServices = require('./UserServices');
+const PostsServices = require('./PostsServices')
 
 /**
  * Exportação de classes de regras de negócio
@@ -6,5 +7,6 @@ const UserServices = require('./UserServices');
  */
 
 module.exports = {
-	UserServices: UserServices
+	UserServices: UserServices,
+	PostsServices: PostsServices
 };

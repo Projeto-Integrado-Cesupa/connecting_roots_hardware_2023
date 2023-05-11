@@ -7,14 +7,10 @@ const database = require('../models');
  * @extends Services
  */
 
-class UserServices extends Services {
+class PostsServices extends Services {
 	constructor() {
-		super('User');
-	}
-
-	async readOneRecordByEmail(email) {
-		return database[this.model_name].findOne({ where: { email: email } });
+		super('Posts');
 	}
 }
 
-module.exports = UserServices;
+module.exports = PostsServices;
