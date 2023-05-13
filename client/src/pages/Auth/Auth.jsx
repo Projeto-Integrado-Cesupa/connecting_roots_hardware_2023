@@ -32,7 +32,7 @@ const Login = () => {
         ? signUpRequest()
         : setConfirmPass(false);
     } else {
-      // dispatch(logIn(data, navigate));
+      loginRequest()
     }
   }
 
@@ -74,8 +74,49 @@ const Login = () => {
       });
   }
 
+  const [ isAlertErrorLogin, setIsAlertErrorLogin ] = useState(false);
+
+  const loginRequest = async () => {
+    const client = axios.create({
+      baseURL: "http://localhost:3100/login" 
+    });
+
+    console.log(data.email, data.password)
+
+    client
+      .post('', {
+        email: data.email,
+        password: data.password
+      }, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then((response) => {
+        if (response.status == 200) {
+          try {
+            const token = response.data.access_token
+            window.localStorage.setItem('token', token);
+            window.location.href = "/Dashboard";
+          } catch (e) {
+            console.log(e);
+          }
+        }
+      })
+      .catch((err) => { 
+        setIsAlertErrorLogin(true)
+        setTimeout(() => {
+          setIsAlertErrorLogin(false);
+        }, 5000);
+      });
+  }
+
   return (
     <div class="min-h-screen flex flex-col items-center login justify-center bg-gray-200">
+
+      {isAlertErrorLogin && <div class="absolute bottom-96 bg-red-100 border border-red-400 text-red-700 px-4 py-300 rounded">
+        <strong class="font-bold">Credenciais inválidas!</strong>
+      </div>}
 
       {isAlertVisible && <div class="absolute bottom-96 bg-green-100 border border-green-400 text-green-700 px-4 py-300 rounded">
         <strong class="font-bold">Conta criada com sucesso!</strong>
@@ -229,8 +270,8 @@ const Login = () => {
             <div class="flex w-full">
               <button
                 onClick={(e) => {
-                  resetForm();
                   handleSubmit(e);
+                  resetForm();
                 }}
                 type="submit"
                 class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-smallTextColor hover:bg-primaryColor border  rounded py-2 w-full transition duration-150 ease-in"

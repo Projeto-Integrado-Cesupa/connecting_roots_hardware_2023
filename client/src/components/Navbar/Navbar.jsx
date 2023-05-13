@@ -260,7 +260,10 @@ const Navbar = () => {
                             </div>
                             <hr className="bg-gray-900 h-px w-full " />
                             <Link
-                              onClick={() => close()}
+                              onClick={() => {
+                                window.localStorage.setItem('token', null);
+                                close()
+                              }}
                               to="/"
                               className="leading-none pt-4 flex justify-center"
                             >
