@@ -9,6 +9,10 @@ class UserControllers {
 		const bodyData = req.body;
 
 		try {
+			if (!bodyData.firstName || !bodyData.lastName || !bodyData.email || !bodyData.cpf || !bodyData.password) {
+				throw new Error("Not enough data")
+			}
+	
 			bodyData.password = await Encrypting.generateHash(bodyData.password);
 			const user = await userServices.readOneRecordByEmail(bodyData.email);
 
