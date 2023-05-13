@@ -37,8 +37,7 @@ class UserControllers {
 			} 
 			
 			const token = await Encrypting.createJWT(user);
-			res.set('Authorization', token);
-			res.status(204).send();
+			res.status(200).send({access_token: token});
 		} catch (error) {
 			res.status(500).json({message: error.message})
 		}

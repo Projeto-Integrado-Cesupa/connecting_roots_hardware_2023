@@ -16,7 +16,7 @@ class Encrypting {
 	static async createJWT(user) {
 		const payload = { id: user.id };
 		return jwt.sign(payload, tokenSecret, {
-			expiresIn: 7200,
+			expiresIn: 10800,
 		});
 	}
 }
