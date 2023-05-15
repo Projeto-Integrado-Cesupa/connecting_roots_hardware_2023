@@ -3,11 +3,13 @@ import { Link } from "react-router-dom"
 
 const ProfileProjects = () => {
   return (
-    <div className="flex flex-col mt-4 rounded-xl border border-gray-300 shadow-md">
+    <Link 
+    to="ProjectsUser"
+    className="flex flex-col mt-4 rounded-xl border border-gray-300 shadow-md">
       <span className="flex justify-center text-xl my-4  text-smallTextColor ">
         Projetos
       </span>
-      <Link className="flex items-center ml-[3rem] gap-2 mb-2">
+      <div className="flex items-center ml-[3rem] gap-2 mb-2">
         <div className="bg-analysis h-[48px] w-[48px] rounded-full flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +27,9 @@ const ProfileProjects = () => {
           <span className="text-lg font-bold leading-none ">0</span>
           <span className="text-base leading-none">Em análise</span>
         </div>
-      </Link>
+      </div>
       <hr className=" flex items-center mx-10 my-4 bg-gray-300" />
-      <Link className="flex items-center ml-[3rem] gap-2 mb-2">
+      <div className="flex items-center ml-[3rem] gap-2 mb-2">
         <div className="bg-smallTextColor h-[48px] w-[48px] rounded-full flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,9 +47,9 @@ const ProfileProjects = () => {
           <span className="text-lg font-bold leading-none ">1</span>
           <span className="text-base leading-none">Em execução</span>
         </div>
-      </Link>
+      </div>
       <hr className=" flex items-center mx-10 my-4 bg-gray-300" />
-      <Link className="flex items-center ml-[3rem] gap-2 mb-8">
+      <div className="flex items-center ml-[3rem] gap-2 mb-8">
         <div className="bg-primaryColor h-[48px] w-[48px] rounded-full flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +67,8 @@ const ProfileProjects = () => {
           <span className="text-lg font-bold leading-none ">3</span>
           <span className="text-base leading-none">Concluídos</span>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

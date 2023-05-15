@@ -3,9 +3,9 @@ import React from "react";
 const ModalUserProfile = ({ setShowModal }) => {
   return (
     <div className="w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40">
-      <div className="max-w-[600px] absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
+      <div className="max-w-[600px]  absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5">
         <div className="flex flex-col p-6">
-          <span className="text-xl font-[500] flex justify-center">
+          <span className="text-2xl font-[500] flex justify-center">
             Informações da empresa
           </span>
         </div>

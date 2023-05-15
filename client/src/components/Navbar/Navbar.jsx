@@ -116,7 +116,7 @@ const Navbar = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Popover className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
@@ -138,7 +138,7 @@ const Navbar = () => {
                       )}
                     </Menu.Item>
                   </div>
-                </Menu.Items>
+                </Popover>
               </Transition>
             </Menu>
             <Menu as="div" className="relative inline-block text-left">
@@ -170,7 +170,7 @@ const Navbar = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Popover className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
@@ -180,9 +180,9 @@ const Navbar = () => {
                               Mensagens
                             </span>
 
-                            <a href="#" className=" underline leading-none">
+                            <Link to="Chat" className=" underline leading-none">
                               Ver todas
-                            </a>
+                            </Link>
                           </div>
                           <hr className="bg-gray-900 h-px w-full " />
                           <div className="text-[14px] flex justify-center items-center leading-none pt-4">
@@ -192,7 +192,7 @@ const Navbar = () => {
                       )}
                     </Menu.Item>
                   </div>
-                </Menu.Items>
+                </Popover>
               </Transition>
             </Menu>
             <Popover as="div" className="relative inline-block text-left">
