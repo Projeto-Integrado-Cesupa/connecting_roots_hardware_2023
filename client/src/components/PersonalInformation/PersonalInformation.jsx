@@ -3,34 +3,48 @@ import React from "react";
 const PersonalInformation = () => {
   return (
     <div className="p-6">
-      <div className="flex flex-col justify-between">
+      <form className="flex flex-col justify-between">
         <span className="text-xl font-[500] pb-2">Geral</span>
         <div className="flex w-full">
           <div className="flex flex-col py-2 w-[23rem]">
-            <label className="text-base ">Nome</label>
+            <label className="text-base ">Razão social</label>
             <input
               type="text"
               class="relative w-full m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.5rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
-              placeholder="Marcos"
+              placeholder="Carbon Free Ltda"
+              required
             />
           </div>
           <div className="flex flex-col py-2 w-[23rem] ml-6">
-            <label className="text-base">Sobrenome</label>
+            <label className="text-base">Nome fantasia</label>
             <input
               type="text"
               class="relative w-full m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.5rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
-              placeholder="Augusto"
+              placeholder="Carbon Free"
+              required
+            />
+          </div> 
+        </div>
+        <div className="flex w-full">
+          <div className="flex flex-col py-2 w-[23rem]">
+            <label className="text-base ">Cnpj</label>
+            <input
+              type="number"
+              class="relative w-full m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.5rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
+              placeholder="123.456.789/0001-12"
+              required
             />
           </div>
-          
-        </div>
-        <span className="text-xl font-[500] py-4">E-mail</span>
-       
+          <div className="flex flex-col py-2 w-[23rem] ml-6">
+            <label className="text-base">Telefone</label>
             <input
-              type="text"
-              class="relative  w-[23rem] m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.5rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
-              placeholder="luisaugusto@gmail.com"
+              type="number"
+              class="relative w-full m-0 -mr-0.5 block  min-w-0 flex-auto border rounded-md border-solid border-smallTextColor bg-transparent bg-clip-padding px-3 py-[0.5rem] text-base font-normal leading-[1.6] text-headingColor outline-none transition duration-200 ease-in-out focus:z-[3] focus:outline-none "
+              placeholder="(91) 99999-9999"
+              required
             />
+          </div>
+        </div>
          <div className="flex items-center gap-4 py-8">
             <button
            
@@ -43,7 +57,7 @@ const PersonalInformation = () => {
               <i class="ri-menu-line"></i>
             </span>
           </div>
-      </div>
+      </form>
     </div>
   );
 };

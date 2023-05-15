@@ -75,7 +75,7 @@ export const router = createBrowserRouter([
             path: 'BenefitPlans',
             element: <BenefitPlans />,
             children:[],
-          },
+          }
         ],
       },
     ],

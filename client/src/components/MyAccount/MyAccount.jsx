@@ -7,7 +7,7 @@ const Account = () => {
       <div className="flex flex-col ">
         <span className="text-3xl py-6 ml-20">Minha conta</span>
         <div className="flex shadow-md b-px rounded-md border-gray-300  b-px border">
-          <div className="flex flex-col bg-smallTextColor rounded-s-md h-96 w-80 items-center">
+          <div className="flex flex-col bg-smallTextColor rounded-s-md h-96 w-80 items-center w-96">
             <Link
               to=""
               className="focus:bg-secondColor text-xl z-[2] flex w-full hover:bg-secondColor rounded-tl-md px-2.5 py-2.5 items-center font-medium leading-tight text-white  transition duration-150 ease-in-out "
@@ -81,7 +81,7 @@ const Account = () => {
               <span className="ml-2 text-xl">Plano de Benefícios</span>
             </Link>
           </div>
-          <div className="">
+          <div className="w-full">
             <Outlet />
           </div>
         </div>

@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const Dashboard = () => {
 
   const token = window.localStorage.getItem('token');
-  if (token !== "null" && token != null) {
+  // if (token !== "null" && token != null) {
     return (
       <div className="">
         <Navbar />
@@ -14,9 +14,9 @@ const Dashboard = () => {
         </main>
       </div>
     );
-  } else {
-    window.location.href = "/Auth";
-  }
+  // } else {
+  //   window.location.href = "/Auth";
+  // }
 
 };
 

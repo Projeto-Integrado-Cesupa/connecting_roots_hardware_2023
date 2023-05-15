@@ -5,7 +5,7 @@ const BenefitPlans = () => {
     <div className="p-6 flex flex-col">
       <span className="text-xl font-[500] pb-4">Detalhes do plano</span>
       <span className="text-base mb-2">Plano atual:</span>
-      <div className="flex items-center p-px rounded-full bg-gray-300">
+      <div className="flex items-center p-px rounded-full bg-gray-300 w-[14rem]">
         <span className="text-base ml-4">Básico R$ 19,90 / mês</span>
         <button className="bg-smallTextColor rounded-full p-2 m-2 ml-2">
           <svg

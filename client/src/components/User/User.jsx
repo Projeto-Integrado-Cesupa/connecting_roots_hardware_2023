@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ModalUserProfile from "../ModalUserProfile/ModalUserProfile";
 
 const User = () => {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
+
   return (
     <div className="flex flex-col mt-4 rounded-xl border border-gray-300 shadow-md">
       <div className="relative flex flex-col  items-center justify-center rounded-t-px">
@@ -14,7 +22,7 @@ const User = () => {
       </div>
       <hr className=" flex items-center m-4 bg-gray-300" />
 
-      <div className="flex justify-around mb-4">
+      <div className="flex justify-around">
         <div className="flex flex-col items-center">
           <span className="text-sm">Seguidores</span>
           <span className="text-base ml-2  text-smallTextColor">7</span>
@@ -24,6 +32,16 @@ const User = () => {
           <span className="text-base ml-2  text-smallTextColor">12</span>
         </div>
       </div>
+      <hr className=" flex items-center m-4 bg-gray-300" />
+      <div className="w-full h-full flex items-center justify-center">
+        <button
+          onClick={() => showModalHandler()}
+          className="text-white bg-smallTextColor hover:bg-secondColor mb-4 py-2 px-4 rounded-[8px] font-[500] ease-in duration-200"
+        >
+          Meu perfil
+        </button>
+      </div>
+      {showModal && <ModalUserProfile setShowModal={setShowModal}/>}
     </div>
   );
 };

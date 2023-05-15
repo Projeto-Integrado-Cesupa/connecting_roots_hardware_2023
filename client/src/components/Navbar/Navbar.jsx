@@ -28,9 +28,10 @@ const Navbar = () => {
             {/*======== LOGO end ======== */}
             {/*======== MENU start ======== */}
             <div className="">
-              <Link 
-              to="PublishProject"
-              className="inline-flex text-sm leading-none sm:text-base bg-white  text-gray-600 hover:text-smallTextColor ring-gray-300">
+              <Link
+                to="PublishProject"
+                className="inline-flex text-sm leading-none sm:text-base bg-white  text-gray-600 hover:text-smallTextColor ring-gray-300"
+              >
                 Publicar
               </Link>
             </div>
@@ -201,7 +202,7 @@ const Navbar = () => {
                   class="relative z-[2] flex items-center rounded-full bg-smallTextColor p-px p-py text-xs font-medium uppercase leading-tight text-white  transition duration-150 ease-in-out "
                   type="button"
                 >
-                  <div className="bg-cover bg-img-person px-2.5 py-2.5 rounded-full w-[2.35rem] h-[2.35rem]"></div>
+                  <div className="bg-cover bg-img-carbonfree px-2.5 py-2.5 rounded-full w-[2.35rem] h-[2.35rem]"></div>
                 </Popover.Button>
               </div>
 
@@ -214,55 +215,44 @@ const Navbar = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Popover.Panel className="absolute right-0 z-10 mt-2 w-[22rem] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Popover.Panel className="absolute right-0 z-10 mt-2 w-[14rem] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   {({ close }) => (
                     <div className="py-1">
                       <Popover.Panel>
                         {({ active }) => (
                           <div className="flex flex-col p-4 ">
                             <span className=" text-headingColor font-bold leading-none pb-4">
-                              Marcos Augusto
+                              Carbon Free
                             </span>
                             <hr className="bg-gray-900 h-px w-full " />
-                            <div className="flex justify-between">
-                              <div className="flex flex-col py-2">
-                                <Link
-                                  onClick={() => close()}
-                                  to="MyAccount"
-                                  className="leading-none py-2"
-                                >
-                                  Minha conta
-                                </Link>
-                                <Link
-                                  onClick={() => close()}
-                                  to="#"
-                                  className="leading-none py-2"
-                                >
-                                  Plano de assinatura
-                                </Link>
-                              </div>
-                              <div className="flex flex-col pt-2">
-                                <Link
-                                  onClick={() => close()}
-                                  to="#"
-                                  className="leading-none p-2"
-                                >
-                                  Meu perfil
-                                </Link>
-                                <Link
-                                  onClick={() => close()}
-                                  to="#"
-                                  className="leading-none p-2"
-                                >
-                                  Central de ajuda
-                                </Link>
-                              </div>
+                            <div className="flex flex-col gap-4 py-4">
+                              <Link
+                                onClick={() => close()}
+                                to="MyAccount"
+                                className="leading-none"
+                              >
+                                Minha conta
+                              </Link>
+                              <Link
+                                onClick={() => close()}
+                                to="#"
+                                className="leading-none"
+                              >
+                                Plano de assinatura
+                              </Link>
+                              <Link
+                                onClick={() => close()}
+                                to="#"
+                                className="leading-none"
+                              >
+                                Financeiro
+                              </Link>
                             </div>
                             <hr className="bg-gray-900 h-px w-full " />
                             <Link
                               onClick={() => {
-                                window.localStorage.setItem('token', null);
-                                close()
+                                window.localStorage.setItem("token", null);
+                                close();
                               }}
                               to="/"
                               className="leading-none pt-4 flex justify-center"
