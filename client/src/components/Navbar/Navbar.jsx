@@ -67,7 +67,7 @@ const Navbar = () => {
           {/*======== MENU center end ======== */}
           {/*======== MENU right ======== */}
           <div className="flex gap-2 col-span-1 justify-end">
-            <Menu as="div" className="relative inline-block text-left">
+            {/* <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
                   class="relative z-[2] flex items-center rounded-full bg-smallTextColor px-2.5 py-2.5 text-xs font-medium uppercase leading-tight text-white  transition duration-150 ease-in-out "
@@ -86,7 +86,7 @@ const Navbar = () => {
                   </svg>
                 </Menu.Button>
               </div>
-            </Menu>
+            </Menu> */}
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button
@@ -116,7 +116,7 @@ const Navbar = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Popover className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
@@ -138,7 +138,7 @@ const Navbar = () => {
                       )}
                     </Menu.Item>
                   </div>
-                </Popover>
+                </Menu.Items>
               </Transition>
             </Menu>
             <Menu as="div" className="relative inline-block text-left">
@@ -170,7 +170,7 @@ const Navbar = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Popover className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
@@ -192,7 +192,7 @@ const Navbar = () => {
                       )}
                     </Menu.Item>
                   </div>
-                </Popover>
+                </Menu.Items>
               </Transition>
             </Menu>
             <Popover as="div" className="relative inline-block text-left">

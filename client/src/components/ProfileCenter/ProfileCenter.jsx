@@ -9,7 +9,7 @@ const ProfileCenter = () => {
     setIsMenuOpen(!isMenuOpen);
   }
   return (
-    <div className="col-span-2 overflow-auto h-screen scrollbar">
+    <div className="col-span-2 overflow-auto h-[92vh] scrollbar">
       <div className="flex flex-col my-4 rounded-xl border border-gray-300 shadow-md p-4 ">
         <div className="flex justify-between items-center ">
           <div className="flex items-center">

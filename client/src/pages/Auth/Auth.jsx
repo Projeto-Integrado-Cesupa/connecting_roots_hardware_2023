@@ -9,16 +9,16 @@ const Login = () => {
     cpf: "",
     email: "",
     password: "",
-    confirmPassword: ""
-  }
-  const [data, setData] = useState(initialState)
+    confirmPassword: "",
+  };
+  const [data, setData] = useState(initialState);
 
-  const [confirmPass, setConfirmPass] = useState(true)
+  const [confirmPass, setConfirmPass] = useState(true);
 
   const resetForm = () => {
-    setData(initialState)
-    setConfirmPass(confirmPass)
-  }
+    setData(initialState);
+    setConfirmPass(confirmPass);
+  };
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -32,101 +32,117 @@ const Login = () => {
         ? signUpRequest()
         : setConfirmPass(false);
     } else {
-      loginRequest()
+      loginRequest();
     }
-  }
+  };
 
-  const [ isAlertVisible, setIsAlertVisible ] = useState(false);
-  const [ isAlertErrorVisible, setIsAlertErrorVisible ] = useState(false);
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+  const [isAlertErrorVisible, setIsAlertErrorVisible] = useState(false);
 
   const signUpRequest = async () => {
     const client = axios.create({
-      baseURL: "http://localhost:3100/sign-up" 
+      baseURL: "http://localhost:3100/sign-up",
     });
 
     client
-      .post('', {
-        firstName: data.firstName,
-        lastName: data.lastName,
-        cpf: data.cpf,
-        email: data.email,
-        password: data.password
-      }, {
-        headers: {
-          'Content-Type': 'application/json'
+      .post(
+        "",
+        {
+          firstName: data.firstName,
+          lastName: data.lastName,
+          cpf: data.cpf,
+          email: data.email,
+          password: data.password,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-      })
+      )
       .then((response) => {
-        console.log(response)
+        console.log(response);
         if (response.status == 201) {
           setIsSignUp(false);
-          setIsAlertVisible(true)
+          setIsAlertVisible(true);
           setTimeout(() => {
             setIsAlertVisible(false);
           }, 5000);
         }
       })
-      .catch((err) => { 
-        setIsAlertErrorVisible(true)
+      .catch((err) => {
+        setIsAlertErrorVisible(true);
         setTimeout(() => {
           setIsAlertErrorVisible(false);
         }, 5000);
       });
-  }
+  };
 
-  const [ isAlertErrorLogin, setIsAlertErrorLogin ] = useState(false);
+  const [isAlertErrorLogin, setIsAlertErrorLogin] = useState(false);
 
   const loginRequest = async () => {
     const client = axios.create({
-      baseURL: "http://localhost:3100/login" 
+      baseURL: "http://localhost:3100/login",
     });
 
-    console.log(data.email, data.password)
+    console.log(data.email, data.password);
 
     client
-      .post('', {
-        email: data.email,
-        password: data.password
-      }, {
-        headers: {
-          'Content-Type': 'application/json'
+      .post(
+        "",
+        {
+          email: data.email,
+          password: data.password,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-      })
+      )
       .then((response) => {
         if (response.status == 200) {
           try {
-            const token = response.data.access_token
-            window.localStorage.setItem('token', token);
+            const token = response.data.access_token;
+            window.localStorage.setItem("token", token);
             window.location.href = "/Dashboard";
           } catch (e) {
             console.log(e);
           }
         }
       })
-      .catch((err) => { 
-        setIsAlertErrorLogin(true)
+      .catch((err) => {
+        setIsAlertErrorLogin(true);
         setTimeout(() => {
           setIsAlertErrorLogin(false);
         }, 5000);
       });
-  }
+  };
 
   return (
     <div class="min-h-screen flex flex-col items-center login justify-center bg-gray-200">
+      {isAlertErrorLogin && (
+        <div class="absolute bottom-96 bg-red-100 border border-red-400 text-red-700 px-4 py-300 rounded">
+          <strong class="font-bold">Credenciais inválidas!</strong>
+        </div>
+      )}
 
-      {isAlertErrorLogin && <div class="absolute bottom-96 bg-red-100 border border-red-400 text-red-700 px-4 py-300 rounded">
-        <strong class="font-bold">Credenciais inválidas!</strong>
-      </div>}
+      {isAlertVisible && (
+        <div class="absolute bottom-96 bg-green-100 border border-green-400 text-green-700 px-4 py-300 rounded">
+          <strong class="font-bold">Conta criada com sucesso!</strong>
+        </div>
+      )}
 
-      {isAlertVisible && <div class="absolute bottom-96 bg-green-100 border border-green-400 text-green-700 px-4 py-300 rounded">
-        <strong class="font-bold">Conta criada com sucesso!</strong>
-      </div>}
+      {isAlertErrorVisible && (
+        <div
+          class="absolute bg-red-100 border border-red-400 text-red-700 px-4 py-300 rounded"
+          style={{ marginBottom: "45%" }}
+        >
+          <strong class="font-bold">Houve um erro na criação da conta</strong>
+        </div>
+      )}
 
-      {isAlertErrorVisible && <div class="absolute bg-red-100 border border-red-400 text-red-700 px-4 py-300 rounded" style={{ marginBottom: "45%"}}>
-        <strong class="font-bold">Houve um erro na criação da conta</strong>
-      </div>}
-
-      <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
+      <div class="flex flex-col bg-white  shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
         <div class="font-medium self-center text-xl sm:text-3xl  text-gray-800">
           {isSignUp ? "Cadastro" : "Login"}
         </div>
@@ -140,7 +156,7 @@ const Login = () => {
                     for="firstname"
                     class="mb-1 text-xs sm:text-sm tracking-wide text-gray-600"
                   >
-                  Nome:
+                    Nome:
                   </label>
                   <div class="relative">
                     <input
@@ -255,18 +271,18 @@ const Login = () => {
                 </div>
               </div>
             )}
-            {isSignUp && (
-              <div class="flex items-center mb-6 -mt-4">
-                <div class="flex ml-auto">
-                  <a
-                    href="#"
-                    class="inline-flex text-xs sm:text-sm text-primaryColor hover:text-smallTextColor"
-                  >
-                    Esqueceu sua senha?
-                  </a>
-                </div>
+
+            <div class="flex items-center mb-6 -mt-4">
+              <div class="flex ml-auto">
+                <a
+                  href="#"
+                  class="inline-flex text-xs sm:text-sm text-primaryColor hover:text-smallTextColor"
+                >
+                  Esqueceu sua senha?
+                </a>
               </div>
-            )}
+            </div>
+
             <div class="flex w-full">
               <button
                 onClick={(e) => {

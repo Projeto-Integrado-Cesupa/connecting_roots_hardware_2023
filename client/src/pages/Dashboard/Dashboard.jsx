@@ -7,10 +7,10 @@ const Dashboard = () => {
   const token = window.localStorage.getItem('token');
   // if (token !== "null" && token != null) {
     return (
-      <div className="">
+      <div className="overflow-hidden h-screen">
         <Navbar />
         <main>
-          <Outlet />
+          <Outlet className=""/>
         </main>
       </div>
     );
