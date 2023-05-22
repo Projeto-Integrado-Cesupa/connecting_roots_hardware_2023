@@ -26,6 +26,8 @@ module.exports = {
         'img-enzo' : "url('./assets/images/enzo.png')",
         'img-publish' : "url('./assets/images/img-publish.png')",
         'img-mmib' : "url('./assets/images/mmib.png')",
+        'img-plantacao' : "url('./assets/images/plantacao.png')",
+        'img-fundos' : "url('./assets/images/fundos.png')",
       },
     },
   },

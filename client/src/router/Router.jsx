@@ -19,11 +19,12 @@ import CompletedProjectsUser from "../components/ProjectsUser/CompletedProjectsU
 import Chat from "../components/Chat/Chat";
 import ChatUser from "../components/Chat/ChatUser";
 import ChatUserTwo from "../components/Chat/ChatUserTwo";
+import Home2 from "../pages/Home/Home2";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home2 />,
     children: [],
   },
   {
